@@ -1,0 +1,319 @@
+body {
+	background-color: #efeee7;
+	margin: 0;
+	padding: 0;
+	font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+	font-size: 18px;
+	line-height: 150%;
+	color: #777777;
+}
+
+.responsive-container
+{
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.responsive-container:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+	width: 100%;
+	border-bottom-style: solid;
+	border-color: #cccccc;
+	border-width: 2px;
+	background-color: #ffffff;
+	margin-bottom: 40px;
+}
+
+a {
+	color: #cccccc;
+}
+
+
+.name {
+	color: #efeee7;
+	background-color: #4aaaa5;
+	text-align: center;
+	padding: 27px 20px;
+	margin: 0;
+	font-size: 28px;
+	font-family: "Georgia", "Times", "Times New Roman", "serif";
+	float: left;
+	font-weight: bold;
+}
+
+.link {
+	float: right;
+	width: 50%;
+	height: 81px;
+	text-align: right;
+	padding-top: 27px;
+	box-sizing: border-box;
+	color: #cccccc;
+
+}	
+
+.link a {
+	text-decoration: none;
+	color: #aaaaaa;
+}
+
+.link span{
+	display: inline-block;
+	margin: 0 15px;
+	color: #dddddd;
+}
+
+.icon {
+	display: inline-block;
+	margin: 0;
+}
+
+.icon .link-icon{
+	text-decoration: none;
+}
+
+.icon .link-icon.img {
+	width: 60px;
+	height: 60px;
+}
+
+h2 {
+	font-size: 24px;
+	font-family: "Georgia", "Times", "Times New Roman", "serif";
+	color: #4aaaa5;
+	border-bottom-style: solid;
+	border-color: #cccccc;
+	border-width: 2px;
+	padding-bottom: 20px;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: "Georgia", "Times", "Times New Roman", "serif";
+	color: #4aaaa5;
+	border-bottom-style: solid;
+	border-color: #cccccc;
+	border-width: 2px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+#main-bio {
+	width: 67.7%;
+	clear: both;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #ffffff;
+	padding: 30px;
+	border-color: #cccccc;
+	float: left;
+}
+
+#bio-image {
+	width: 200px;
+	height: 200px;
+	margin-right: 20px;
+	float: left;
+}
+
+#contact-info {
+	width: 28.125%;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #ffffff;
+	padding: 30px;
+	border-color: #cccccc;
+	float: right;
+}
+
+
+footer {
+	border-top: 8px;
+	border-top-style: solid;
+	border-top-color: #4aaaa5;
+	text-align: center;
+	background-color: #666666;
+	color: #dddddd;
+	height: 100px;
+	padding-top: 31px;
+    font-size: 14px;
+	margin-top: 40px;
+
+}
+
+form.contact-form input[type=text] {
+	height: 30px;
+	width: 97%;
+	margin-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+form.contact-form textarea {
+	height: 200px;
+	width: 97%;
+	border: 1px solid #cccccc;
+	resize: none;
+	padding: 10px;
+}
+
+form.contact-form button{
+	border-radius: 0;
+	background-color: #4aaaa5;
+	border: 0;
+	color: #efeee7;
+	font-size: 18px;
+    padding: 10px 30px;
+}
+
+div.game {
+	width: 275px;
+	height: 200px;
+	padding-top: 125px;
+	background-size: cover;
+	background-position: center center;
+	float: left;
+}
+
+div.game:nth-child(odd){
+	margin-left: 37px;
+}
+
+div.game:nth-child(1n+4){
+	margin-top: 37px;
+}
+
+div.title{
+	height: 60px;
+	background-color: #4aaaa5;
+	color: #efeee7;
+	text-align: center;
+	font-family: "Georgia", "Times", "Times New Roman", "serif";
+	padding-top: 15px;
+}
+
+div.game.mind{
+	background-image: url(../images/mind.jpeg);
+}
+
+div.game.horse{
+	background-image: url(../images/images.jpeg);
+}
+
+div.game.crochet{
+	background-image: url(../images/170px-Crohook.jpg);
+}
+
+div.game.books{
+	background-image: url(../images/download.jpeg);
+}
+
+div.game.improve{
+	background-image: url(../images/improve.jpeg);
+}
+
+@media screen and (max-width: 980px) {
+	#main-bio div.game {
+		float: none;
+		margin-left: 0;
+		margin-bottom: 35px;
+	}
+	#main-bio {
+		width: initial;	
+	}
+	#contact-info {
+		float: left;
+		margin-left: 25px;
+		width: initial;
+	}
+	.responsive-container {
+		width: 750px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#main-bio {
+		float: none;
+		width: 585px;
+		margin-left: 20px;
+		margin-bottom: 35px;
+		box-sizing: content-box;
+    	display: table;
+    	margin-right: 20px;
+	}
+	
+	#contact-info {
+		float: none;
+		width: 647px;
+		margin-left: 20px;
+	}
+	.name {
+		margin-left: 20px;
+
+	}
+	.link {
+		margin-right: 20px;
+	}
+	#main-bio div.game {
+		float: left;
+		margin: 0 35px 35px 0;
+	}
+	#main-bio div.game:nth-child(odd){
+		margin-right: 0;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	.responsive-container {
+		width: 100%;
+	}
+	#main-bio div.game {
+		float: none;
+		margin-left: 0;
+		margin-bottom: 35px;
+		margin-right: 0;
+	}
+	#main-bio {
+		width: initial;	
+	}
+	#contact-info {
+		width: 374px;
+	}
+	.name {
+		float: none;
+		margin-left: 0;
+	}
+
+	.link {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.link a {
+		margin: 0 9%;
+	}
+	div.game {
+		width: 500px;
+		height: 350px;
+	}
+	.title {
+		margin-top: 150px;
+	}
+}
+
+
+
+
+
+
+
